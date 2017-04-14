@@ -1,0 +1,27 @@
+{
+  "name": "angular-humble-inline-daterangepicker",
+  "version": "0.0.1",
+  "authors": [
+    "Leonardo Valenti <n00d@ymail.com>"
+  ],
+  "description": "Angular Inline Date Range Picker",
+  "main": "dist/directive.js, dist/directive.js",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.26",
+    "angular-sanitize": "~1.2.26",
+    "angular-mocks": "~1.2.26"
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
+  }
+}

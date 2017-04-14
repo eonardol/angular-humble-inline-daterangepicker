@@ -1,0 +1,167 @@
+/*!
+ * angular-directive-boilerplate
+ * 
+ * Version: 0.0.8 - 2017-04-14T16:12:52.683Z
+ * License: MIT
+ */
+
+
+humble-inline-daterangepicker ::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+humble-inline-daterangepicker .prev-container,
+humble-inline-daterangepicker .next-container {
+  float: left;
+}
+humble-inline-daterangepicker .month-container {
+  float: left;
+  width: 300px;
+  margin: 0 1rem;
+}
+humble-inline-daterangepicker .month-container div.header {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+humble-inline-daterangepicker .month-container div.weekdays-container .weekday {
+  display: inline-block;
+  width: 14.28571429%;
+  text-align: center;
+}
+humble-inline-daterangepicker .month-container div.week {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
+humble-inline-daterangepicker .month-container div.week button.day {
+  width: 14.28571429%;
+  border: none;
+  outline: none;
+}
+humble-inline-daterangepicker .month-container div.week button.day.only-from-date {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+humble-inline-daterangepicker .month-container div.week button.day.only-to-date {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+humble-inline-daterangepicker .month-container div.week button.day.from-and-to-date {
+  background-color: #ee82ee;
+  color: #ffffff;
+}
+humble-inline-daterangepicker .month-container div.week button.day:disabled {
+  opacity: 0.5;
+}
+/*humble-inline-daterangepicker {
+    .humble-datepicker-container {
+        .prev-container, .next-container {
+            float: left;
+        }
+
+        .month-container {
+            float: left;
+            display: block;
+            .border-box;
+            background: white;
+            width: 300px;
+            border: solid 1px @border-colour;
+            margin-bottom: 10px;
+            @secondary-colour: #2875C7;
+            @spacing: 10px;
+            @icon-width: 40px;
+            @header-height: 40px;
+            >div.header {
+                float: left;
+                width: 100%;
+                background: @secondary-colour;
+                height: @header-height;
+                color: white;
+                >* {
+                    .vertical-centre(@header-height);
+                }
+                >i {
+                    float: left;
+                    width: @icon-width;
+                    font-size: 1.125em;
+                    font-weight: bold;
+                    position: relative;
+                    .border-box;
+                    padding: 0 @spacing;
+                    cursor: pointer;
+                }
+                >i.fa-angle-left {
+                    text-align: left;
+                }
+                >i.fa-angle-right {
+                    text-align: right;
+                    margin-left: @icon-width*-1;
+                }
+                >span {
+                    float: left;
+                    width: 100%;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    .border-box;
+                    padding-left: @icon-width+@spacing;
+                    margin-left: @icon-width*-1;
+                    text-align: center;
+                    padding-right: @icon-width;
+                    color: inherit;
+                }
+            }
+            >div.week {
+                float: left;
+                width: 100%;
+                border-top: solid 1px @border-colour;
+                &:first-child {
+                    border-top: none;
+                }
+                >button.day, >span.day {
+                    float: left;
+                    width: 100%/7;
+                    .border-box;
+                    outline: none;
+                    border-top: none;
+                    border-right: none;
+                    border-bottom: none;
+                    border-left: solid 1px @border-colour;
+                    font-size: 0.75em;
+                    text-align: center;
+                    .vertical-centre(30px);
+                    background: white;
+                    color: black;
+                    &:first-child {
+                        border-left: none;
+                    }
+                    &.today {
+                        background: #E3F2FF;
+                    }
+                    &.different-month {
+                        color: #C0C0C0;
+                    }
+                    &.fromDate {
+                        background: red;
+                        color: white;
+                    }
+                    &.toDate {
+                        background: blue;
+                        color: white;
+                    }
+                    &.fromAndToDate {
+                        background: blueviolet;
+                        color: white;
+                    }
+                    &:disabled {
+                        cursor: not-allowed;
+                    }
+                }
+                &.names>span {
+                    color: @secondary-colour;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}*/

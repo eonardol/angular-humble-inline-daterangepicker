@@ -1,0 +1,6 @@
+/*!
+ * angular-directive-boilerplate
+ * 
+ * Version: 0.0.8 - 2017-04-14T16:12:52.683Z
+ * License: MIT
+ */humble-inline-daterangepicker ::after{content:"";display:block;clear:both}humble-inline-daterangepicker .next-container,humble-inline-daterangepicker .prev-container{float:left}humble-inline-daterangepicker .month-container{float:left;width:300px;margin:0 1rem}humble-inline-daterangepicker .month-container div.header{text-align:center;font-weight:700;padding:.5rem}humble-inline-daterangepicker .month-container div.weekdays-container .weekday{display:inline-block;width:14.28571429%;text-align:center}humble-inline-daterangepicker .month-container div.week{width:100%;border-bottom:1px solid #eee}humble-inline-daterangepicker .month-container div.week button.day{width:14.28571429%;border:none;outline:0}humble-inline-daterangepicker .month-container div.week button.day.only-from-date{background-color:red;color:#fff}humble-inline-daterangepicker .month-container div.week button.day.only-to-date{background-color:#00f;color:#fff}humble-inline-daterangepicker .month-container div.week button.day.from-and-to-date{background-color:violet;color:#fff}humble-inline-daterangepicker .month-container div.week button.day:disabled{opacity:.5}

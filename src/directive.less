@@ -1,0 +1,182 @@
+@border-color: #eee;
+@only-from-date-bgcolor: red;
+@only-from-date-fontcolor: white;
+@only-to-date-bgcolor: blue;
+@only-to-date-fontcolor: white;
+@from-and-to-date-bgcolor: violet;
+@from-and-to-date-fontcolor: white;
+
+humble-inline-daterangepicker {
+    // clearfix
+    ::after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+
+    .prev-container, .next-container {
+        float: left;
+    }
+
+    .month-container {
+        float: left;
+        width: 300px;
+        margin: 0 1rem;
+
+        div.header {
+            text-align: center;
+            font-weight: bold;
+            padding: 0.5rem;
+        }
+
+        div.weekdays-container {
+            .weekday {
+                display: inline-block;
+                width: 100%/7;
+                text-align: center;
+            }
+        }
+        div.week {
+            width: 100%;
+            border-bottom: 1px solid @border-color;
+
+            button.day {
+                width: 100%/7;
+                border: none;
+                outline: none;
+
+                &.only-from-date {
+                    background-color: @only-from-date-bgcolor;
+                    color: @only-from-date-fontcolor;
+                }
+
+                &.only-to-date {
+                    background-color: @only-to-date-bgcolor;
+                    color: @only-to-date-fontcolor;
+                }
+
+                &.from-and-to-date {
+                    background-color: @from-and-to-date-bgcolor;
+                    color: @from-and-to-date-fontcolor;
+                }
+
+                &:disabled {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+
+/*humble-inline-daterangepicker {
+    .humble-datepicker-container {
+        .prev-container, .next-container {
+            float: left;
+        }
+
+        .month-container {
+            float: left;
+            display: block;
+            .border-box;
+            background: white;
+            width: 300px;
+            border: solid 1px @border-colour;
+            margin-bottom: 10px;
+            @secondary-colour: #2875C7;
+            @spacing: 10px;
+            @icon-width: 40px;
+            @header-height: 40px;
+            >div.header {
+                float: left;
+                width: 100%;
+                background: @secondary-colour;
+                height: @header-height;
+                color: white;
+                >* {
+                    .vertical-centre(@header-height);
+                }
+                >i {
+                    float: left;
+                    width: @icon-width;
+                    font-size: 1.125em;
+                    font-weight: bold;
+                    position: relative;
+                    .border-box;
+                    padding: 0 @spacing;
+                    cursor: pointer;
+                }
+                >i.fa-angle-left {
+                    text-align: left;
+                }
+                >i.fa-angle-right {
+                    text-align: right;
+                    margin-left: @icon-width*-1;
+                }
+                >span {
+                    float: left;
+                    width: 100%;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    .border-box;
+                    padding-left: @icon-width+@spacing;
+                    margin-left: @icon-width*-1;
+                    text-align: center;
+                    padding-right: @icon-width;
+                    color: inherit;
+                }
+            }
+            >div.week {
+                float: left;
+                width: 100%;
+                border-top: solid 1px @border-colour;
+                &:first-child {
+                    border-top: none;
+                }
+                >button.day, >span.day {
+                    float: left;
+                    width: 100%/7;
+                    .border-box;
+                    outline: none;
+                    border-top: none;
+                    border-right: none;
+                    border-bottom: none;
+                    border-left: solid 1px @border-colour;
+                    font-size: 0.75em;
+                    text-align: center;
+                    .vertical-centre(30px);
+                    background: white;
+                    color: black;
+                    &:first-child {
+                        border-left: none;
+                    }
+                    &.today {
+                        background: #E3F2FF;
+                    }
+                    &.different-month {
+                        color: #C0C0C0;
+                    }
+                    &.fromDate {
+                        background: red;
+                        color: white;
+                    }
+                    &.toDate {
+                        background: blue;
+                        color: white;
+                    }
+                    &.fromAndToDate {
+                        background: blueviolet;
+                        color: white;
+                    }
+                    &:disabled {
+                        cursor: not-allowed;
+                    }
+                }
+                &.names>span {
+                    color: @secondary-colour;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}*/

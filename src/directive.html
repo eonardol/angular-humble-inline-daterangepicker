@@ -1,0 +1,24 @@
+<div class="humble-datepicker-container">
+    <div class="prev-container">
+        <button type="button" ng-click="previous()">&lt;&lt;</button>
+    </div>
+    <div class="month-container" ng-repeat="month in months track by $index">
+        <div class="header">
+            <span>{{month.format("MMMM, YYYY")}}</span>
+        </div>
+        <div class="weekdays-container">
+            <span class="weekday" ng-repeat="wd in weekdays track by $index" ng-bind="wd"></span>
+        </div>
+        <div class="week" ng-repeat="week in month.weeks track by $index">
+            <button id="day-{{day.date.format('YYYYMMDD')}}" type="button" class="day" 
+                ng-class="{'today': day.isToday, 'only-from-date': day.date.isSame(fromDate)&&!day.date.isSame(toDate)&&day.isCurrentMonth, 'only-to-date': day.date.isSame(toDate)&&!day.date.isSame(fromDate)&&day.isCurrentMonth, 'from-and-to-date': day.date.isSame(toDate)&&day.date.isSame(fromDate)&&day.isCurrentMonth }" 
+                ng-click="select(day)" ng-repeat="day in week.days track by $index"
+                ng-disabled="!day.isCurrentMonth">
+                {{day.number}}
+            </button>
+        </div>
+    </div>
+    <div class="next-container">
+        <button type="button" ng-click="next()">&gt;&gt;</button>
+    </div>
+</div>
